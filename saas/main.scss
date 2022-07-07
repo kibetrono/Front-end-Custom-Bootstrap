@@ -9,5 +9,8 @@ $success: rgb(34, 88, 204);
 $custom-theme-colors:(
     "mycolor":#9dc238,
 );
+
+// mapping our own custom theme colors with the original theme colors
+$theme-colors: map-merge($custom-theme-colors,$theme-colors);
 // import bootstrap
 @import '../node_modules/bootstrap/scss/bootstrap'
